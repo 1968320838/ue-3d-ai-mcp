@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ue-3d-generator": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/ue-3d-ai-mcp",
+        "run",
+        "ue-3d-generator"
+      ],
+      "env": {
+        "FAL_API_KEY": "your_fal_api_key_here"
+      }
+    }
+  }
+}

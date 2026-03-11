@@ -1,0 +1,19 @@
+[project]
+name = "ue-3d-generator-mcp"
+version = "0.1.0"
+description = "MCP tool for text-to-3D generation for Unreal Engine"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=0.3.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+ue-3d-generator = "ue_3d_generator.server:main"
